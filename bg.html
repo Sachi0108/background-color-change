@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color change</title>
+    <link rel="stylesheet" href="bg.css">
+</head>
+<body>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+</body>
+    <script>
+        
+        // Function to change the background color of the body
+        function changeBackgroundColor() {
+          
+            // Access the body element 
+          document.body.style.backgroundColor = getNewColor();
+        }
+      
+       
+       
+        // Function to generate a random hex color code
+        function getNewColor() {
+
+          // Hexadecimal characters used for color codes
+          let letters = "0123456789ABCDEF";
+          
+          // Initializing an empty string for the color code
+          let color = "#";
+          
+          // Loop to generate a 6-character hex color code
+          for (let i = 0; i < 6; i++) {
+             color += letters[Math.floor(Math.random() * 16)];  // hex base =16
+          }
+          
+          return color;
+        }
+      </script>
+</body>
+</html>

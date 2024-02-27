@@ -1,0 +1,19 @@
+body{
+    background-color: coral;
+    text-align: center;
+}
+
+    button{
+    font-size: 36px;
+    text-align: center;
+    margin: 20%;
+    border-radius: 10px;
+    box-shadow: 20px black;
+    color: black;
+    background-color: cornsilk;
+    padding: 20px;
+    cursor: pointer;
+}
+button:active{
+    transform: translateY(4px);
+}
